@@ -1,5 +1,12 @@
 import { useEffect, useState } from 'react';
-import Stack from '@mui/material/Stack';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import Pog from "./page/pog"
+import Libreville from "./page/libreville"
+import Navbar from "./components/navbar"
+import HeroSection from './components/hero'
 import base from './api/base';
 
 export default function CustomizedSteppers() {
@@ -31,9 +38,6 @@ export default function CustomizedSteppers() {
             })
         });
 
-        // To fetch the next page of records, call `fetchNextPage`.
-        // If there are more records, `page` will get called again.
-        // If there are no more records, `done` will get called.
         fetchNextPage();
       }, function done(err) {
         if (err) { 
@@ -49,15 +53,24 @@ export default function CustomizedSteppers() {
     getStudents()
   },[]);
 
-  console.log(students)
   return (
-    <Stack sx={{ width: '100%' }} spacing={4}>
-      <header style={{backgroundColor:"black", display:"flex", justifyContent:"space-between", alignItems:"center", paddingLeft:20, paddingRight:20}}>
-        <img src="./logo-ecole.png" alt=""  height={80}/>
-
-      </header>
-
-    
-    </Stack>
+      <>
+        <Navbar/>
+        <Routes>
+          <Route
+            path="/"
+            element={<Pog students={students}/>}
+          />
+          <Route
+            path="/port-gentil"
+            element={<Pog students={students}/>}
+          />
+          <Route
+            path="/libreville"
+            element={<Libreville students={students}/>}
+          />
+          
+        </Routes>
+    </>
   );
 }
