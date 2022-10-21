@@ -1,0 +1,6 @@
+@media only screen and (max-width: 991px) {
+    /* .partenaires{flex-direction: column;} */
+    .partenaires{width: fit-content; flex-wrap: wrap; display: grid; grid-gap: 20px;}
+    .partenaires .box{height: 100px;}
+    .partenaires .box .slick-slide .content-image img{height: 75px!important}
+} 

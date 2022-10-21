@@ -11,6 +11,7 @@ import Pog from "./page/pog"
 import Libreville from "./page/libreville"
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
+import Partenaire from "./components/partenaire"
 import BottomNavigation from './components/buttomNavigation'
 import Paper from '@mui/material/Paper';
 import base from './api/base';
@@ -41,7 +42,9 @@ export default function CustomizedSteppers() {
               cohorte : record.get('cohorte'),
               profile : record.get('profil'),
               profession : record.get('profession'),
-              description : record.get('description')
+              description : record.get('description'),
+              cv : record.get('cv'),
+              disponible : record.get('disponible')
             })
         });
 
@@ -86,6 +89,8 @@ export default function CustomizedSteppers() {
             <BottomNavigation/>
           </Paper>
         </Hidden>
+        
+        <Partenaire/>
         
         <Footer/>
     </Box>
