@@ -9,6 +9,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Hidden from '@mui/material/Hidden';
 import Pog from "./page/pog"
 import Libreville from "./page/libreville"
+import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import BottomNavigation from './components/buttomNavigation'
 import Paper from '@mui/material/Paper';
@@ -86,6 +87,7 @@ export default function CustomizedSteppers() {
           </Paper>
         </Hidden>
         
+        <Footer/>
     </Box>
   );
 }
