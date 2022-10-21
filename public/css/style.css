@@ -5,9 +5,7 @@
     --dark: #181d38;
 }
 
-.box {
-    height: 222px;
-}
+.box {height: 222px;}
 
 .box .blocker {
     width: 100%!important;
