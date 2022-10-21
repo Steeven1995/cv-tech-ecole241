@@ -59,15 +59,15 @@ export default function CustomizedSteppers() {
         <Routes>
           <Route
             path="/"
-            element={<Pog students={students}/>}
+            element={<Pog students={students.filter(student=>student.ville==="Port-gentil")}/>}
           />
           <Route
             path="/port-gentil"
-            element={<Pog students={students}/>}
+            element={<Pog students={students.filter(student=>student.ville==="Port-gentil")}/>}
           />
           <Route
             path="/libreville"
-            element={<Libreville students={students}/>}
+            element={<Libreville students={students.filter(student=>student.ville==="Libreville")}/>}
           />
           
         </Routes>

@@ -3,7 +3,7 @@ import Card from '../components/card'
 
 function Libreville({students}) {
 
-    console.log(students)
+
     return (
     <>
         <div className="container-xxl py-5">
@@ -13,7 +13,9 @@ function Libreville({students}) {
                     <h1 className="mb-5">Nos apprenants</h1>
                 </div>
                 <div className="row g-4">
-                    <Card/>
+                    {students.map((student, index)=>{
+                         return student.cohorte==="Référent Digital" && <Card student={student} key={index}/>
+                    })}
                 </div>
             </div>
                 
@@ -25,7 +27,9 @@ function Libreville({students}) {
                     <h1 className="mb-5">Nos apprenants</h1>
                 </div>
                 <div className="row g-4">
-                    <Card/>
+                    {students.map((student, index)=>{
+                      return student.cohorte==="Dévéloppeur web et web mobile" && <Card student={student} key={index}/>
+                    })}
                 </div>
             </div>
                 
@@ -33,5 +37,6 @@ function Libreville({students}) {
     </>
     )
 }
+
 
 export default Libreville
