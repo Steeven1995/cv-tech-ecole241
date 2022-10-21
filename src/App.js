@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react';
+import React , { useEffect, useState } from 'react';
 import {
   Routes,
   Route,
 } from "react-router-dom";
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+
 import Hidden from '@mui/material/Hidden';
 import Pog from "./page/pog"
 import Libreville from "./page/libreville"
@@ -16,6 +19,7 @@ export default function CustomizedSteppers() {
   const [students, setStudents] = useState([]);
   const [tampon, setTampon] = useState([])
   const [loading, setLoading] = useState(true);
+  const ref = React.useRef(null);
 
   const getStudents = ()=>{
     var table = []
@@ -52,11 +56,13 @@ export default function CustomizedSteppers() {
   }
 
   useEffect(() => {
+    ref.current.ownerDocument.body.scrollTop = 0;
     getStudents()
   },[]);
 
   return (
-      <>
+    <Box sx={{ pb: 7 }} ref={ref}>
+      <CssBaseline />
         <Navbar/>
         <Routes>
           <Route
@@ -74,12 +80,12 @@ export default function CustomizedSteppers() {
           
         </Routes>
 
-        <Hidden only='sm'>
-          <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+        <Hidden only={['lg', 'xl', 'md']}>
+          <Paper sx={{ position: 'fixed', bottom: 5, left: 0, right: 0 }} elevation={3}>
             <BottomNavigation/>
           </Paper>
         </Hidden>
         
-    </>
+    </Box>
   );
 }

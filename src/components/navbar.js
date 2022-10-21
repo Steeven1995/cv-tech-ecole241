@@ -7,8 +7,8 @@ function navbar() {
         <Link to='' className="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="./img/logo.png" alt="" className="logo"/>        
         </Link>
-        <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span className="navbar-toggler-icon"></span>
+        <button type="button" style={{backgroundColor:"#ff3333"}} className="navbar-toggler btn btn-primary py-4 px-md-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            Nous contactez
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
