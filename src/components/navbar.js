@@ -8,7 +8,7 @@ function navbar() {
             <img src="./img/logo.png" alt="" className="logo"/>        
         </Link>
         <button type="button" style={{backgroundColor:"#ff3333"}} className="navbar-toggler btn btn-primary py-4 px-md-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            Nous contacter
+            Nous contactez
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
