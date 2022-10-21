@@ -3,10 +3,12 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Hidden from '@mui/material/Hidden';
 import Pog from "./page/pog"
 import Libreville from "./page/libreville"
 import Navbar from "./components/navbar"
-import HeroSection from './components/hero'
+import BottomNavigation from './components/buttomNavigation'
+import Paper from '@mui/material/Paper';
 import base from './api/base';
 
 export default function CustomizedSteppers() {
@@ -71,6 +73,13 @@ export default function CustomizedSteppers() {
           />
           
         </Routes>
+
+        <Hidden only='sm'>
+          <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+            <BottomNavigation/>
+          </Paper>
+        </Hidden>
+        
     </>
   );
 }
