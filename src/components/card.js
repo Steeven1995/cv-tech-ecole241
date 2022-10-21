@@ -11,7 +11,7 @@ function card({student}) {
                     <div className="bg-light d-flex justify-content-center pt-2 px-1">
                         <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.linkedin}><i className="fab fa-linkedin-in"></i></a>
                         <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.facebook}><i className="fab fa-facebook-f"></i></a>
-                        <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={"http://"+student.site}><i className="fa fa-globe"></i></a>
+                        <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={"http://"+student.site}><i className="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div className="text-center p-4">
