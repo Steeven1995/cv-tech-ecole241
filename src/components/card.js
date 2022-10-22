@@ -14,7 +14,7 @@ function card({student}) {
                 
                 <div className="text-center p-4 content">
                     <p>{result + "..."}</p>
-                    <a className="" target="_blank" href={"http://"+student.site}>en savoir plus<i className="fa fa-more"></i></a>
+                    <a className="" target="_blank" href={student.site?.includes("http") ? student.site : "http://"+student.site}>En savoir plus<i className="fa fa-more"></i></a>
                 </div>
                 
             </div>
