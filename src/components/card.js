@@ -21,8 +21,8 @@ function card({student}) {
             </div>
             <div className="position-relative d-flex justify-content-center" style={{marginTop: "-23px"}}>
                 <div className="bg-light d-flex justify-content-center pt-2 px-1">
-                    <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.linkedin}><i className="fab fa-linkedin-in"></i></a>
-                    <a className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.cv[0].url}><i className="fa fa-file"></i></a>
+                    <a title='Lien linkdin' className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.linkedin}><i className="fab fa-linkedin-in"></i></a>
+                    <a title='Télécharcher cv' className="btn btn-sm-square btn-primary mx-1" target="_blank" href={student.cv[0].url}><i className="fa fa-file"></i></a>
                 </div>
             </div>
             <div className="text-center p-4">
