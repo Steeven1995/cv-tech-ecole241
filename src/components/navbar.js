@@ -15,7 +15,7 @@ function navbar() {
                 <Link to="port-gentil" className="nav-item nav-link">Port-Gentil</Link>
                 <Link to="libreville" className="nav-item nav-link">Libreville</Link>
             </div>
-            <a target="_blank" href="https://ecole241.org/contact/" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Nous contactez<i className="fa fa-arrow-right ms-3"></i></a>
+            <a target="_blank" href="https://ecole241.org/contact/" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Nous contacter<i className="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
   )
