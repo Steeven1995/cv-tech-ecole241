@@ -68,10 +68,9 @@ function partenaire() {
                         <div className="single-client image-switcher" title="Title #5">
                             <div className="content-image">
                                 <img style={{width:"auto", height:"100px"}} 
-                                    src="https://ecole241.org/wp-content/uploads/2021/10/ONE-REV.png"
+                                    src={Logo}
                                     loading="lazy" 
                                     alt='img'
-                                    srcset="https://ecole241.org/wp-content/uploads/2021/10/ONE-REV.png 748w, https://ecole241.org/wp-content/uploads/2021/10/ONE-REV-300x134.png 300w, https://ecole241.org/wp-content/uploads/2021/10/ONE-REV-600x268.png 600w"  sizes="(max-width: 369px) 100vw, 369px"
                                 />
                             </div>
                         </div>
