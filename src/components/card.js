@@ -15,7 +15,7 @@ function card({student}) {
                 
                 <div className="text-center p-4 content">
                     <p>{result + "..."}</p>
-                    <a className="" target="_blank" href={"http://"+student.site}>Découvrer mon portfolio<i className="fa fa-more"></i></a>
+                    <a className="" target="_blank" href={"http://"+student.site}>En savoir plus sur moi<i className="fa fa-more"></i></a>
                 </div>
                 
             </div>
