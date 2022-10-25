@@ -1,5 +1,6 @@
 import React from 'react'
 import './partenaire.css'
+import Logo from '../pnpe.jpg'
 
 function partenaire() {
   return (
