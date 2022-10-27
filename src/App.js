@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import Hidden from '@mui/material/Hidden';
+import Hero from "./components/hero"
+import All from "./page/all"
 import Pog from "./page/pog"
 import Libreville from "./page/libreville"
 import Footer from "./components/footer"
@@ -68,10 +70,13 @@ export default function CustomizedSteppers() {
     <Box sx={{ pb: 7 }} ref={ref}>
       <CssBaseline />
         <Navbar/>
+        
+        <Hero/>
+
         <Routes>
           <Route
             path="/"
-            element={<Pog students={students.filter(student=>student.ville==="Port-gentil")}/>}
+            element={<All students={students.filter(student=>student)}/>}
           />
           <Route
             path="/port-gentil"
