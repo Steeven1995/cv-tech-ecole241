@@ -1,15 +1,15 @@
 import React from 'react'
 import Card from '../components/card'
 
-function Pog({students}) {
+function All({students}) {
 
     return (
     <>
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 className="mt-5 mb-5" style={{fontSize: "1.9rem"}}>Port-Gentil</h1>
-                    <h6 className="mb-3 section-title bg-white text-center text-primary px-3">Référents digital</h6>
+                    <h1 className="mt-5 mb-5" style={{fontSize: "2.1rem"}}>Nos pépites du numériques</h1>
+                    <h6 className="mb-4 section-title bg-white text-center text-primary px-3">Référents digital</h6>
                 </div>
                 <div className="row g-4">
                     {students.map((student, index)=>{
@@ -19,10 +19,10 @@ function Pog({students}) {
             </div>
                 
         </div>
-        <div className="container-xxl py-2">
+        <div className="container-xxl py-3">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 className="mb-3 section-title bg-white text-center text-primary px-3">Développeur web & Web mobile</h6>
+                    <h6 className="mb-4 section-title bg-white text-center text-primary px-3">Développeur web & Web mobile</h6>
                 </div>
                 <div className="row g-4">
                     {students.map((student, index)=>{
@@ -36,4 +36,4 @@ function Pog({students}) {
     )
 }
 
-export default Pog
+export default All

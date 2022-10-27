@@ -1,11 +1,9 @@
-import { positions } from '@mui/system'
 import React from 'react'
 import './card.css'
 
 function card({student}) {
     let text = student.description;
     let result = text.substring(0, 155);
-    console.log(student.cv[0].url);
     return (
         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay={"0.1s"}>
             <div className="team-item bg-light box-item">
@@ -15,7 +13,7 @@ function card({student}) {
                 
                 <div className="text-center p-4 content">
                     <p>{result + "..."}</p>
-                    <a className="" target="_blank" href={"http://"+student.site}>En savoir plus sur moi<i className="fa fa-more"></i></a>
+                    <a className="" target="_blank" href={"http://"+student.site}><i className="fa fa-info-circle"></i>&nbsp;En savoir plus </a>
                 </div>
                 
             </div>
@@ -27,7 +25,8 @@ function card({student}) {
             </div>
             <div className="text-center p-4">
                 <h5 className="mb-0" style={{fontSize: "1rem"}}>{student.nom +" "+student.prenom}</h5>
-                <small>{student.profession}</small>
+                <small className='cohorte' style={{display: 'none'}}>{student.cohorte}</small>
+                <small className='profession' style={{color: '#900c3e', fontWeight: '600'}}>{student.profession}</small>
             </div>
         </div>
     )

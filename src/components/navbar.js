@@ -12,6 +12,7 @@ function navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
+                <Link to="/" className="nav-item nav-link">Nos pépites</Link>
                 <Link to="port-gentil" className="nav-item nav-link">Port-Gentil</Link>
                 <Link to="libreville" className="nav-item nav-link">Libreville</Link>
             </div>
