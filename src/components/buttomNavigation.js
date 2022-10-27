@@ -15,9 +15,9 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation showLabels sx={{ width: "100%" }} value={value} onChange={handleChange}>
+    <BottomNavigation showLabels sx={{ width: "100%", position: "fixed", bottom: "-1px", zIndex: 2 }} value={value} onChange={handleChange}>
       <BottomNavigationAction
-        label="Accueil"
+        label="Nos pépites"
         value="/"
         icon={<HomeIcon />}
       />

@@ -3,6 +3,7 @@
     --primary: #FF3333;
     --light: #F0FBFC;
     --dark: #181d38;
+    overflow-x: hidden
 }
 
 .box {height: 222px;}

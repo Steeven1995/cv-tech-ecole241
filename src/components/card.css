@@ -85,3 +85,5 @@
     line-height: 1.2rem;
     transition: 1.5s;
 }
+
+.box .blocker {height:100%}
