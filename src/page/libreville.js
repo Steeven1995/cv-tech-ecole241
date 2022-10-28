@@ -6,7 +6,7 @@ function Libreville({students}) {
 
     return (
     <>
-        <div className="container-xxl py-5">
+        <div className="container-xxl pb-5">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h1 className="mt-5 mb-5" style={{fontSize: "1.9rem"}}>Libreville</h1>
