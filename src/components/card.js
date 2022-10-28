@@ -6,14 +6,14 @@ function card({student}) {
     let result = text.substring(0, 155);
     return (
         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay={"0.1s"}>
-            <div className="team-item bg-light box-item">
+            <div className="team-item box-item">
                 <div className="overflow-hidden box imgBox">
                     <img className="img-fluid blocker" src={student.profile[0].thumbnails.large.url} alt={"Photo de profil de "+ student.nom +" "+student.prenom}/>
                 </div>
                 
                 <div className="text-center p-4 content">
                     <p>{result + "..."}</p>
-                    <a className="" target="_blank" href={"http://"+student.site}><i className="fa fa-info-circle"></i>&nbsp;En savoir plus </a>
+                    <a className="" target="_blank" href={student.site?.includes("http") ? student.site : "http://"+student.site}><i className="fa fa-info-circle"></i>&nbsp;En savoir plus </a>
                 </div>
                 
             </div>

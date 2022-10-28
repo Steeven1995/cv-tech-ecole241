@@ -5,16 +5,20 @@ function hero() {
     <> 
         <div className="container-fluid p-0 mb-5">
             <div style={{width: "auto", height: '100vh'}} className="owl-carousel-item position-relative">
-                <img style={{width: "100%", height: '100%'}} className="img-fluid" src="./img/carousel-1.jpg" alt=""/>
-                <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{background: "rgba(24, 29, 56, .7)"}}>
+                <img style={{width: "100%", height: '100%'}} className="img-fluid" src="." alt=""/>
+                <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{background: "white"}}>
                     <div className="container">
-                        {/* <div className="row justify-content-start">
+                        <div className="row justify-content-start">
                             <div className="col-sm-10 col-lg-8">
-                                <h1 style={{fontSize: '2.7rem'}} className="display-3 text-white animated slideInDown">40 pépites de la Promo 3 de <br/> Lbv et 30 pépites de la Promo 1 de Port-Gentil,</h1>
-                                <h5 style={{color: 'white'}} className="text-uppercase mb-3 animated slideInDown">arrivée à l'état brut, aujourd’hui devenus des Référents Digital et Développeurs web raffinés,</h5>
-                                <p className="fs-5 text-white mb-4 pb-2">vous souhaitent la bienvenue sur leur plateforme.</p>
+                                <h1 style={{fontSize: '2.7rem'}} className="display-3 text-white animated slideInDown"><span style={{color: '#FF3333'}}>Découvrez nos professionnels ...</span> </h1>
+                                <h5 style={{color: '#181d38'}} className="mb-3 animated slideInDown">
+                                    Ce sont 70 nouvelles pépites de nos fabriques de Libreville et de Port-Gentil, qui rejoingnent la liste de nos professionnnels.  
+                                </h5>
+                                <h5 style={{color: '#181d38', width: '85%'}} className="mb-3 animated slideInDown">
+                                    Aujourd'hui, ayant des compétences affinées dans le numérique; nos Référents digital et Développeurs web sont prêts à mettre leurs savoir-faire à votre service.
+                                </h5>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
