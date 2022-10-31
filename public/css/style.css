@@ -218,6 +218,7 @@
     position: relative;
     display: inline-block;
     text-transform: uppercase;
+    width: 70%;
 }
 
 .section-title::before {
@@ -360,4 +361,9 @@
 .testimonial-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
+}
+
+@media only screen and (max-width: 388px) {
+    /* .navbar{display: none!important;} */
+    .action {display: grid; grid-template-columns: repeat(2, 170px)}
 }
