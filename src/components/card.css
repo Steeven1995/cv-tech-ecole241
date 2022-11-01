@@ -80,3 +80,5 @@
     line-height: 1.2rem;
     transition: 1.5s;
 }
+
+@media only screen and (max-width: 600px) {img.img-fluid.blocker {height: 333px!important; padding: 1rem;}}
