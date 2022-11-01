@@ -36,15 +36,6 @@ function footer() {
                 </div>
             </div>
         </div>
-        <div className="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5">
-            <div className="row">
-                <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                    <p className="m-0 text-white">&copy; <a href="#">cvtheque-ecole241.ga</a>. Tous droits reserves.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
     </div>
   )
 }
